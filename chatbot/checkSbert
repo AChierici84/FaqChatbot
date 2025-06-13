@@ -1,0 +1,25 @@
+import spacy
+from sentence_transformers import SentenceTransformer, util
+
+# Carica spaCy italiano
+nlp = spacy.load("it_core_news_md")
+
+# Carica modello multilingua SBERT
+model = SentenceTransformer("distiluse-base-multilingual-cased-v1")
+
+# Frasi da confrontare
+query = "Come faccio a creare un account?"
+faq = "Come creo un account?"
+
+# Similarità con spaCy
+doc1 = nlp(query)
+doc2 = nlp(faq)
+similarity_spacy = doc1.similarity(doc2)
+
+# Similarità con SBERT
+embedding1 = model.encode(query, convert_to_tensor=True)
+embedding2 = model.encode(faq, convert_to_tensor=True)
+similarity_sbert = util.cos_sim(embedding1, embedding2).item()
+
+print(f"spaCy similarity: {similarity_spacy:.4f}")
+print(f"SBERT similarity: {similarity_sbert:.4f}")
