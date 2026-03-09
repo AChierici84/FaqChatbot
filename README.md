@@ -100,6 +100,23 @@ Variabile opzionale:
 
 - `RAG_API_URL` (default: `http://127.0.0.1:8000/ask`)
 
+
+**Esempio di conversazione**
+
+Inizio gestendo le small talks poi riscontra un intento faq e cercara la risposta più attinente.
+<img width="1053" height="851" alt="Screenshot 2026-03-09 190928" src="https://github.com/user-attachments/assets/be6d866d-dd5e-415f-8516-3b09f1b41d60" />
+
+Richiede un'altra faq.
+<img width="1041" height="347" alt="Screenshot 2026-03-09 191009" src="https://github.com/user-attachments/assets/12024c6d-cdfd-42e2-9420-30cb5e0df67f" />
+
+Informazioni generiche.
+<img width="1041" height="170" alt="Screenshot 2026-03-09 191119" src="https://github.com/user-attachments/assets/9b0bada1-bb98-4eb4-988b-f0f11ba23a1c" />
+<img width="1122" height="232" alt="Screenshot 2026-03-09 191134" src="https://github.com/user-attachments/assets/6b5d11c4-53b7-46cf-815c-948181325093" />
+
+Saluti e ringraziamenti.
+<img width="1075" height="209" alt="Screenshot 2026-03-09 191214" src="https://github.com/user-attachments/assets/c02c84cf-ddce-4a64-9639-653af0c5cf0d" />
+
+
 ## Note tecniche
 
 - Modello embeddings: `distiluse-base-multilingual-cased-v1`
