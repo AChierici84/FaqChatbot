@@ -1,6 +1,6 @@
 # FAQ Zalando → Embeddings → ChromaDB
 
-Pipeline minimale per:
+Pipeline per:
 
 1. scaricare le FAQ da Zalando,
 2. generare embeddings,
